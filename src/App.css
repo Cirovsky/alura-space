@@ -1,0 +1,29 @@
+.main{
+    background: linear-gradient(174.61deg, #041833 4.16%, #04244F 48%, #154580 96.76%);
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 9.9375em 20.5em .65fr .05fr;
+    grid-template-columns: 20vw 60vw 20vw;
+    grid-template-areas: 
+    'header header header header'
+    'side-menu banner banner banner'
+    'empty galery galery left-galery'
+    'footer footer footer footer';
+}
+
+.header{
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner{
+    grid-area: banner;
+    display: flex;
+    margin-right: 1.5em;
+}
+
+.menu{
+    grid-area: side-menu;
+}
