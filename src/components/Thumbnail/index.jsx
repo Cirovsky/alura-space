@@ -23,10 +23,7 @@ const Thumbnail = ({ photo, left}) => {
                 <h3>{photo.nome}</h3>
                 <p>{photo.fonte}</p>
                 <div className='thumb__label-icons'>
-                    <span onClick={()=> {
-                        setFavorite(!favorite)
-                        console.log(favorite)
-                        }}>{fav}</span>
+                    <span onClick={()=> setFavorite(!favorite)}>{fav}</span>
                     <span><MdOpenInFull className='thumb-open'/></span>
                 </div>
             </div>

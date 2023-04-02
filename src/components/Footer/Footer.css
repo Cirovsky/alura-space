@@ -16,6 +16,10 @@
     align-items: center;
 }
 
-.footer img{
+.footer svg{
     width: 1.45em;
+}
+
+.footer svg:hover{
+    fill: var(--font-color-secundary);
 }

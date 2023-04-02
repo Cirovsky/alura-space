@@ -21,10 +21,14 @@ import { fotos } from './data/fotos';
 import './App.css';
 
 function App() {
-  const [tags, setTags] = useState(['Estrelas', 'Galáxias', 'Lua', 'Planetas']);
-  const [tagSelected, setTagSelected] = useState('');
   const [menuSelected, setMenuSelected] = useState('Início');
+  const [tagSelected, setTagSelected] = useState('');
 
+  const selectTag = (tag)=>{
+    tag === tagSelected? setTagSelected(''): setTagSelected(tag);
+  }
+  
+  const tags = ['Estrelas', 'Galáxias', 'Lua', 'Planetas'];
   const socialMedia =[
     {icon:Facebook(), alt: 'logomarca da rede social facebook'},
     {icon:Twitter(), alt: 'logomarca da rede social twitter'},
@@ -54,7 +58,7 @@ function App() {
         classGalery={'galery'}
         photos = {fotos}
         tagSelected={tagSelected}
-        setTagSelected={setTagSelected}
+        setTagSelected={selectTag}
       />
       <Galery
         title={'Populares'}
