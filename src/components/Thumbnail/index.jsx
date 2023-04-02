@@ -1,7 +1,6 @@
 import './Thumbnail.css';
 import {MdFavorite, MdFavoriteBorder, MdOpenInFull} from 'react-icons/md';
 import { useState } from 'react';
-import open from '../../assets/open.png'
 
 const Thumbnail = ({ photo, left}) => {
 

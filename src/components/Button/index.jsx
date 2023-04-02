@@ -1,9 +1,9 @@
 import './Button.css';
 
-const Button = (props) =>{
+const Button = ({children, tagSelected, setTagSelected}) =>{
     return(
-        <button className='button'>
-            {props.children}
+        <button className={`button ${tagSelected === children? 'tag-selected': '' }`} onClick={() => setTagSelected(children)}>
+            {children}
         </button>
     )
 }

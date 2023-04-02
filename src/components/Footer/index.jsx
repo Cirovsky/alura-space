@@ -1,9 +1,9 @@
 import ListItem from '../ListItem';
 import './Footer.css';
 
-const Footer = ({socialMedia, createBy}) =>{
+const Footer = ({socialMedia, createBy, className}) =>{
 
-    const navSocialMedia = socialMedia.map(sm=> <ListItem key={sm.alt} item ={sm}/>)
+    const navSocialMedia = socialMedia.map(sm=> <ListItem key={sm.alt} item ={sm} className={className}/>)
 
     return(
         <footer className="footer">

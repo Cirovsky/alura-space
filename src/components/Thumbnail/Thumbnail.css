@@ -1,7 +1,7 @@
 .container__thumb{
     display: flex;
     flex-direction: column;
-    background-color: var(--bg-thumb);
+    background-color: var(--color-blue);
     border-radius: 20px;
 }
 

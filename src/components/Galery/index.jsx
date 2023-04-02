@@ -2,11 +2,18 @@ import './Galery.css';
 import Button from '../Button';
 import Thumbnail from '../Thumbnail';
 
-const Galery = ({ title, subtitle, classGalery, tags, photos, left }) => {
-    console.log(photos)
+const Galery = ({ title, subtitle, classGalery, tags, photos, left, tagSelected, setTagSelected}) => {
     const createSubtitle = () => {
         if(subtitle){
-            const buttonsTags = tags.map(tag=> <li key={tag}><Button key={tag}>{tag}</Button></li>);
+            const buttonsTags = tags.map(tag=> {
+            return (<li key={tag}>
+                        <Button 
+                            key={tag}
+                            tagSelected={tagSelected}
+                            setTagSelected={setTagSelected}>
+                                {tag}
+                        </Button></li>)
+        });
             return (<div className='container galery__subtitle'><h3>{subtitle}:</h3>
                 <ul className='galery__tags'>
                     {buttonsTags}
