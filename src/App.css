@@ -1,14 +1,18 @@
+.container{
+    display: flex;
+}
+
 .main{
     background: linear-gradient(174.61deg, #041833 4.16%, #04244F 48%, #154580 96.76%);
     min-height: 100vh;
     display: grid;
-    grid-template-rows: 9.9375em 20.5em .65fr .05fr;
-    grid-template-columns: 20vw 60vw 20vw;
+    grid-template-rows: 9.9375em 20.5em 10fr 5em;
+    grid-template-columns: 1.2fr 4fr 1.2fr;
     grid-template-areas: 
-    'header header header header'
-    'side-menu banner banner banner'
-    'empty galery galery left-galery'
-    'footer footer footer footer';
+    'header header header'
+    'side-menu banner banner'
+    'empty galery left-galery'
+    'footer footer footer';
 }
 
 .header{
@@ -26,4 +30,17 @@
 
 .menu{
     grid-area: side-menu;
+}
+
+.galery{
+    grid-area: galery;
+    justify-self: flex-end;
+}
+.left-galery{
+    grid-area: left-galery;
+}
+.footer{
+    grid-area: footer;
+    align-self: baseline;
+    height: 100%;
 }

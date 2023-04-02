@@ -1,18 +1,25 @@
 
 :root {
     --bg-main: linear-gradient(174.61deg, #041833 4.16%, #04244F 48%, #154580 96.76%);
+    --bg-thumb: rgba(217, 217, 217, 0.3);
     --font-color-main: white;
+    --font-color-secundary: #7B78E5;
     --degrade-pink: linear-gradient(90deg, #C98CF1 0%, #7B78E5 100%);
+    --button-color: rgba(217, 217, 217, 0.3);
+    --bg-footer: #04244F;
+    --banner: no-repeat center url('./assets/banner.png');
+    --search: no-repeat right url('./assets/search.png');
 }
 
 @font-face {
-    font-family: 'Ghandi sans';
+    font-family: 'Ghandi Sans';
     src: url('./assets/fontes/GandhiSans-Regular.otf') format('truetype');
 }
 
-body, header, h1, h2, h3, h4, p, span, div,li, input{
-    font-family: 'Gandhi sans', sans-serif;
+body, header, h1, h2, h3, h4, p, span, div,ul, li, input, button{
+    font-family: 'Gandhi Sans', sans-serif;
     font-size: 1em;
+    font-weight: 400;
     margin: 0;
     padding: 0;
     color: var(--font-color-main);

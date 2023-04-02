@@ -1,5 +1,5 @@
 .banner{
-    background: no-repeat center url('../../assets/banner.png');
+    background: var(--banner);
     background-size: cover;
     border-radius: 1.25em;
     align-items: center;
@@ -9,6 +9,5 @@
 .banner p{
     color: var(--font-color-main);
     font-size: 3em;
-    font-weight: 400;
-    width: 19vw;
+    width: 25vw;
 }

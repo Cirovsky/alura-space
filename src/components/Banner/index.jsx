@@ -1,9 +1,9 @@
 import './Banner.css';
 
-const Banner = (props) =>{
+const Banner = ({text}) =>{
     return(
         <div className="banner">
-            <p>A galeria mais completa de fotos do espaço!</p>
+            <p>{text}</p>
         </div>
     )
 }

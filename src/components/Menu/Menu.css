@@ -12,11 +12,3 @@
     padding: 0 1.5em;
 }
 
-.menu ul li a{
-    text-decoration: none;
-    color: var(--font-color-main);
-    font-size: 1.5em;
-    display: inline-flex;
-    align-items: center;
-}
-

@@ -1,0 +1,13 @@
+.menu__item{
+    text-decoration: none;
+    color: var(--font-color-main);
+    font-size: 1.5em;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75em;
+}
+
+.menu__icone{
+    display: flex;
+    align-items: center;
+}
