@@ -2,10 +2,9 @@ import './Thumbnail.css';
 import {MdFavorite, MdFavoriteBorder, MdOpenInFull} from 'react-icons/md';
 import { useState } from 'react';
 
-const Thumbnail = ({ photo, left}) => {
-
-    const [favorite,setFavorite] = useState(false);
-
+const Thumbnail = ({ photo, left, setPicture}) => {
+    console.log(setPicture);
+    
     if (left) {
         return (
             <li>
@@ -13,8 +12,12 @@ const Thumbnail = ({ photo, left}) => {
             </li>
         );
     }
+    
+    const [favorite,setFavorite] = useState(false);
 
-    const fav = favorite ? <MdFavorite className='thumb-fav fav-true' /> : <MdFavoriteBorder className='thumb-fav fav-false'/>
+    const fav = favorite ? 
+        <MdFavorite className='thumb-fav fav-true' />:
+        <MdFavoriteBorder className='thumb-fav fav-false'/>
 
     return (
         <li className='container__thumb'>
@@ -24,7 +27,7 @@ const Thumbnail = ({ photo, left}) => {
                 <p>{photo.fonte}</p>
                 <div className='thumb__label-icons'>
                     <span onClick={()=> setFavorite(!favorite)}>{fav}</span>
-                    <span><MdOpenInFull className='thumb-open'/></span>
+                    <span onClick={()=> setPicture(photo)}><MdOpenInFull className='thumb-open'/></span>
                 </div>
             </div>
         </li>

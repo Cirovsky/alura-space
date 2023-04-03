@@ -5,7 +5,7 @@
     --font-color-secundary: #7B78E5;
     --degrade-pink: linear-gradient(90deg, #C98CF1 0%, #7B78E5 100%);
     --button-color: #455872;
-    --color-blue: #2d0d4b;
+    --color-blue: #064e64;
     --banner: no-repeat center url('./assets/banner.png');
     --search: no-repeat right url('./assets/search.png');
 }

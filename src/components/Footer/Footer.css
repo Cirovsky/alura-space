@@ -16,8 +16,20 @@
     align-items: center;
 }
 
+.footer h3 a{
+    text-decoration: none;
+    color: var(--font-color-main);
+}
+
+.footer h3 a:hover{
+    text-decoration: none;
+    color: var(--font-color-secundary);
+}
+
 .footer svg{
-    width: 1.45em;
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
 }
 
 .footer svg:hover{
