@@ -347,6 +347,6 @@ body, header, h1, h2, h3, h4, p, span, div, ul, li, input, button {
   left: 440px;
   cursor: pointer;
 }
-.layer__opacity .picture__closehover {
+.layer__opacity .picture__close:hover {
   color: red;
 }/*# sourceMappingURL=style.css.map */
