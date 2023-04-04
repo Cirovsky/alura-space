@@ -1,5 +1,3 @@
-import './Picture.css'
-
 const Picture = ({picture, setPicture}) => {
     if(picture == null){
         return <></>;

@@ -1,0 +1,93 @@
+@import '../../styles/abstract/variables';
+
+@mixin container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thumb {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-blue;
+    border-radius: 20px;
+
+    &__img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 288px;
+        height: 205px;
+        overflow: hidden;
+        border-radius: 20px 20px 0 0;
+
+        img {
+            width: auto;
+            max-height: 100%;
+        }
+    }
+
+    &__label {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: auto auto;
+        padding: 0.75em 0.625em 0.75em 0.875em;
+
+        h3 {
+            font-size: 1.25em;
+            font-weight: 700;
+            grid-column: 1/2;
+            grid-row: 1/2;
+            align-self: self-end;
+
+        }
+
+        p {
+            font-size: 1em;
+            font-weight: 400;
+            grid-column: 1/2;
+            grid-row: 2/3;
+            align-self: center;
+        }
+
+        &-icons {
+            display: flex;
+            align-items: center;
+            column-gap: .75em;
+            grid-row: 2/3;
+            grid-column: 2/3;
+
+            .fav {
+                width: 1.7em;
+                height: 1.7em;
+                cursor: pointer;
+
+                &-true {
+                    color: red;
+                }
+            }
+
+            .open {
+                width: 1.5em;
+                height: 1.5em;
+                cursor: pointer;
+            }
+        }
+
+    }
+}
+
+.thumb-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 212px;
+    height: 118px;
+    overflow: hidden;
+    border-radius: 20px;
+
+    img {
+        height: auto;
+        max-width: 100%;
+    }
+}

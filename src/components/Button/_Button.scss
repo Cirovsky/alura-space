@@ -1,0 +1,23 @@
+@import '../../styles/abstract/variables';
+
+.button{
+    margin: 0;
+    font-size: 1.5em;
+    padding: 0.4em 0;
+    background-color: var(--button-color);
+    color: var(--font-color-main);
+    border-radius: 0.4em;
+    border-style: none;
+    border: 2px solid transparent;
+    cursor: pointer;
+    &__see-all{
+        width: 212px;
+        height: 51px;
+        font-size: 1.25em;
+        background-color: $color-blue;
+        &:hover{
+            background:  linear-gradient($color-blue,$color-blue) padding-box, 
+            $degrade border-box;
+        }
+    }
+}

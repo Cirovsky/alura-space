@@ -1,4 +1,3 @@
-import './Banner.css';
 
 const Banner = ({text}) =>{
     return(

@@ -1,0 +1,32 @@
+@import '../../styles/abstract/variables';
+
+.header {
+    padding: 0 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+        color: var(--font-color-main);
+        margin: 0;
+        display: flex;
+    }
+
+    input {
+        background: linear-gradient(#041833, #041833) padding-box,
+            $degrade border-box;
+        color: $color-main;
+        padding: .6em 0 .6em .8em;
+        font-size: 1.25em;
+        width: 27.8em;
+        height: 2.8em;
+        border: 2px solid transparent;
+        border-radius: .5em;
+
+        &::placeholder {
+            background-color: none;
+            background: $search;
+            color: $color-main;
+        }
+    }
+}

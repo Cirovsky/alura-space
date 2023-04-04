@@ -1,7 +1,5 @@
 import ListItem from '../ListItem';
 
-import './Menu.css';
-
 const Menu = ({menuItens, className, setMenuSelected, menuSelected}) => {
     const listaMenu = menuItens.map(item => {
         return (<ListItem 

@@ -1,0 +1,39 @@
+@import '../../styles/abstract/variables';
+
+.footer {
+    background-color: $color-blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5em;
+
+    ul {
+        display: flex;
+        column-gap: 2.1875em;
+
+        li {
+            display: flex;
+            align-items: center;
+            span{
+                svg{
+                    display: block;
+                    width: $default-size/2;
+                    height: $default-size/2;
+                    &:hover{
+                        fill: $color-secundary;
+                    }
+                }
+            }
+        }
+    }
+
+    h3 {
+        a {
+            text-decoration: none;
+            color: $color-main;
+            &:hover {
+                color: $color-secundary
+            }
+        }
+    }
+}

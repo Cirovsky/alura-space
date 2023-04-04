@@ -1,0 +1,16 @@
+@import '../../styles/abstract/variables';
+
+.banner{
+    display: flex;
+    margin-right: $default-size/2;
+    background: $banner;
+    background-size: cover;
+    border-radius: 1.25em;
+    align-items: center;
+    padding: 4em;
+    p{
+        color: $color-main;
+        font-size: $default-size;
+        width: 25vw;
+    }
+}

@@ -1,5 +1,3 @@
-import './Header.css';
-
 const Header = ({logo, placeholder, icon}) =>{
     return(
         <header className="container header">

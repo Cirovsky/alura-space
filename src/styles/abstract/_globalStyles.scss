@@ -1,0 +1,20 @@
+@import './variables';
+
+@font-face {
+    font-family: 'Ghandi Sans';
+    src: url('.src/assets/fontes/GandhiSans-Regular.otf') format('truetype');
+}
+
+body, header, h1, h2, h3, h4, p, span, div,ul, li, input, button{
+    font-family: 'Gandhi Sans', sans-serif;
+    font-size: $default-size/3;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: $color-main;
+    text-decoration: none;
+    list-style: none;
+}
+
+@media (prefers-color-scheme: light) {
+}

@@ -1,4 +1,3 @@
-import './Galery.css';
 import Button from '../Button';
 import Thumbnail from '../Thumbnail';
 
@@ -16,8 +15,6 @@ const Galery = ({
     setPicture,
 }) => {
 
-    console.log(setPicture);
-
     const createSubtitle = () => {
         if (subtitle) {
             const buttonsTags = tags.map(tag => {
@@ -30,7 +27,7 @@ const Galery = ({
                     </Button></li>)
             });
             return (<div className='container galery__subtitle'><h3>{subtitle}:</h3>
-                <ul className='galery__tags'>
+                <ul className='tags'>
                     {buttonsTags}
                 </ul>
             </div>)
@@ -67,7 +64,7 @@ const Galery = ({
         <section className={classGalery}>
             <h2>{title}</h2>
             {divSubtitle}
-            <ul className={` ${left ? 'galery__thumbnails-left' : 'galery__thumbnails'}`}>
+            <ul className={` ${left ? 'left-galery__thumbnails' : 'galery__thumbnails'}`}>
                 {galery}
                 {buttonSeeAll}
             </ul>

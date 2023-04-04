@@ -1,0 +1,39 @@
+@import '../../styles/abstract/variables';
+
+.main{
+    position: relative;
+    background: $bg-main;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 9.9375em 20.5em 10fr 5em;
+    grid-template-columns: 1.2fr 4fr 1.2fr;
+    grid-template-areas: 
+    'header header header'
+    'side-menu banner banner'
+    'empty galery left-galery'
+    'footer footer footer';
+    .header{
+        grid-area: header;
+    }
+    .banner{
+        grid-area: banner;
+    }
+    .menu{
+        grid-area: side-menu;
+    }
+    .galery{
+        grid-area: galery;
+        justify-self: flex-end;
+    }
+    .left-galery{
+        grid-area: left-galery;
+    }
+    
+    .footer{
+        grid-area: footer;
+        align-self: baseline;
+        height: 100%;
+    }
+}
+
+

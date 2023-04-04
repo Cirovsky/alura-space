@@ -1,0 +1,59 @@
+@import '../../styles/abstract/variables';
+
+@mixin config-container {
+    display: flex;
+    align-items: center;
+}
+
+@mixin square-icon {
+    $size: $default-size * 2/3;
+    width: $size;
+    height: $size;
+    border-radius: $size/4;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    ul{
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0 1.5em;
+    }
+    
+    &__item {
+        text-decoration: none;
+        color: $color-main;
+        font-size: $default-size/2;
+        @include config-container;
+        gap: 0.75em;
+        cursor: pointer;
+    
+        &-icon {
+            @include config-container;
+            justify-content: center;
+            background-color: $color-blue;
+            @include square-icon;
+            svg{
+                $size: $default-size/2;
+                width: $size;
+                height: $size;
+            }
+        }
+    }
+    
+    &__item-selected {
+        color: $color-secundary;
+        font-weight: 500;
+        .menu__item-icon {
+            background: $degrade;
+        }
+    }
+}
+
+
+
+

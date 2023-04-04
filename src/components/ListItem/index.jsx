@@ -1,6 +1,3 @@
-
-import './ListItem.css';
-
 const ListItem = ({ item, className, menuSelected, setMenuSelected }) => {
 
     const icon = item.icon;
