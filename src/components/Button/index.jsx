@@ -1,6 +1,4 @@
 const Button = ({children, tagSelected, setTagSelected, leftGalery = false, setSeeAll}) =>{
-
-    console.log(tagSelected)
     if(leftGalery){
         return (<button 
             className={'button button__see-all'} 
