@@ -5,7 +5,7 @@ import Menu from '../../components/Menu';
 import Galery from '../../components/Galery';
 import Footer from '../../components/Footer';
 
-import logo from '../../assets/logo.png';
+import logo from '../../files/logo.png';
 
 import { MdFacebook as Facebook } from 'react-icons/md';
 import { BsTwitter as Twitter } from 'react-icons/bs';
