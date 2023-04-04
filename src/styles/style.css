@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Ghandi Sans";
-  src: url("../files/fontes/GandhiSans-Regular.otf") format("truetype");
+  src: url(".src/files/fontes/GandhiSans-Regular.otf") format("truetype");
 }
 body, header, h1, h2, h3, h4, p, span, div, ul, li, input, button {
   font-family: "Gandhi Sans", sans-serif;
@@ -67,12 +67,12 @@ body, header, h1, h2, h3, h4, p, span, div, ul, li, input, button {
 }
 .header input::-moz-placeholder {
   background-color: none;
-  background: no-repeat right url("../files/search.png");
+  background: no-repeat right url("./src/files/search.png");
   color: white;
 }
 .header input::placeholder {
   background-color: none;
-  background: no-repeat right url("../files/search.png");
+  background: no-repeat right url("./src/files/search.png");
   color: white;
 }
 
@@ -121,7 +121,7 @@ body, header, h1, h2, h3, h4, p, span, div, ul, li, input, button {
 .banner {
   display: flex;
   margin-right: 1.5rem;
-  background: no-repeat center url("../files/banner.png");
+  background: no-repeat center url("./src/files/banner.png");
   background-size: cover;
   border-radius: 1.25em;
   align-items: center;
@@ -156,7 +156,9 @@ body, header, h1, h2, h3, h4, p, span, div, ul, li, input, button {
 }
 .galery__subtitle .tags {
   display: flex;
-  justify-content: space-between;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  justify-content: flex-end;
   flex-grow: 1;
 }
 .galery__subtitle .tags .button {
@@ -170,8 +172,10 @@ body, header, h1, h2, h3, h4, p, span, div, ul, li, input, button {
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
-  row-gap: 2vh;
-  justify-content: space-between;
+  row-gap: 1.5rem;
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+  justify-content: flex-start;
 }
 
 .left-galery {
