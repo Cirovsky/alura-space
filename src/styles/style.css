@@ -67,12 +67,12 @@ body, header, h1, h2, h3, h4, p, span, div, ul, li, input, button {
 }
 .header input::-moz-placeholder {
   background-color: none;
-  background: no-repeat right url("./src/assets/search.png");
+  background: no-repeat right url("../assets/banner.png");
   color: white;
 }
 .header input::placeholder {
   background-color: none;
-  background: no-repeat right url("./src/assets/search.png");
+  background: no-repeat right url("../assets/search.png");
   color: white;
 }
 
