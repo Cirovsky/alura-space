@@ -1,4 +1,4 @@
-import ListItem from '../ListItem';
+import ListItem from 'components/ListItem';
 
 const Footer = ({socialMedia, createBy, className}) =>{
 

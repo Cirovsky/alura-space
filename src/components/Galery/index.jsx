@@ -1,5 +1,5 @@
-import Button from '../Button';
-import Thumbnail from '../Thumbnail';
+import Button from 'components/Button';
+import Thumbnail from 'components/Thumbnail';
 
 const Galery = ({
     title,

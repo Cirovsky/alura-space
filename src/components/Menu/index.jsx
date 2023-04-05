@@ -1,4 +1,4 @@
-import ListItem from '../ListItem';
+import ListItem from 'components/ListItem';
 
 const Menu = ({menuItens, className, setMenuSelected, menuSelected}) => {
     const listaMenu = menuItens.map(item => {
