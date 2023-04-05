@@ -49,14 +49,12 @@ function Home() {
     setSeeAll(!seeAll);
   }
 
-  const fotosFiltradas = []
-  
-  tagSelected? fotos.forEach((foto)=>{
+  const fotosFiltradas = tagSelected? fotos.filter((foto)=>{
     if(foto.tag === tagSelected){
-      fotosFiltradas.push(foto);
+      return foto;
     }
-  }): fotos.forEach(foto => 
-    fotosFiltradas.push(foto));
+  }): [...fotos];
+  
 
   console.log(fotosFiltradas)
 
