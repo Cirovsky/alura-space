@@ -6,7 +6,7 @@ const Thumbnail = ({ photo, left, setPicture}) => {
     if (left) {
         return (
             <li>
-                <div className='thumb-left'><img src={photo.url} alt={photo.alt} /></div>
+                <div className='thumb-left'><img src={photo.imagem} alt={photo.creditos} /></div>
             </li>
         );
     }
@@ -19,10 +19,10 @@ const Thumbnail = ({ photo, left, setPicture}) => {
 
     return (
         <li className='thumb'>
-            <div className='thumb__img'><img src={photo.url} alt={photo.alt} /></div>
+            <div className='thumb__img'><img src={photo.imagem} alt={photo.titulo} /></div>
             <div className='thumb__label'>
-                <h3>{photo.nome}</h3>
-                <p>{photo.fonte}</p>
+                <h3>{photo.titulo}</h3>
+                <p>{photo.creditos}</p>
                 <div className='thumb__label-icons'>
                     <span onClick={()=> setFavorite(!favorite)}>{fav}</span>
                     <span onClick={()=> setPicture(photo)}><MdOpenInFull className='open'/></span>

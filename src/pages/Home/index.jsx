@@ -16,8 +16,11 @@ import { AiOutlineEye as MaisVistas } from 'react-icons/ai';
 import { BiLike as MaisCurtidas } from 'react-icons/bi';
 import { TfiShine as Novas } from 'react-icons/tfi';
 import { MdLightbulbOutline as Surpreenda } from 'react-icons/md';
-import { fotos } from '../../data/fotos';
 import Picture from '../../components/Picture';
+
+import {fotos} from '../../data/fotos.js';
+
+console.log(fotos[0].imagem);
 
 function Home() {
   const [menuSelected, setMenuSelected] = useState('Início');
@@ -46,6 +49,16 @@ function Home() {
     setSeeAll(!seeAll);
   }
 
+  const fotosFiltradas = []
+  
+  tagSelected? fotos.forEach((foto)=>{
+    if(foto.tag === tagSelected){
+      fotosFiltradas.push(foto);
+    }
+  }): fotos.forEach(foto => 
+    fotosFiltradas.push(foto));
+
+  console.log(fotosFiltradas)
 
   const tags = ['Estrelas', 'Galáxias', 'Lua', 'Planetas'];
   const socialMedia = [
@@ -63,7 +76,7 @@ function Home() {
 
   return (
     <>
-      <div className="container main">
+      <div className="grid">
         <Picture picture={picture} setPicture={setPicture} />
         <Header logo={logo} placeholder={'O que procura?'} />
         <Menu
@@ -77,7 +90,7 @@ function Home() {
           subtitle={'Busque por tags'}
           tags={tags}
           classGalery={'galery'}
-          photos={fotos}
+          photos={fotosFiltradas}
           tagSelected={tagSelected}
           setTagSelected={selectTag}
           setPicture={setPicture}

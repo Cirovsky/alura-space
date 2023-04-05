@@ -10,18 +10,79 @@ import foto9 from '../files/imagens/galeria/foto-9.png';
 import foto10 from '../files/imagens/galeria/foto-10.png';
 
 
-const foto = [foto1, foto2, foto3, foto4, foto5, foto6, foto7, foto8, foto9, foto10];
-const fotos = [];
+const fotos = [
+    {
+      titulo: "Nome da Foto",
+      creditos: "Alura Space",
+      imagem: foto1,
+      id: "1",
+      tag: "Galáxias"
+    },
+    {
+      titulo: "Nome da Foto",
+      creditos: "Alura Space",
+      imagem: foto2,
+      id: "2",
+      tag: "Estrelas"
+    },
+    {
+      titulo: "Nome da Foto",
+      creditos: "Alura Space",
+      imagem: foto3,
+      id: "3",
+      tag: "Lua"
+    },
+    {
+      titulo: "Nome da Foto",
+      creditos: "Alura Space",
+      imagem: foto4,
+      id: "4",
+      tag: "Galáxias"
+    },
+    {
+      titulo: "Nome da Foto",
+      creditos: "Alura Space",
+      imagem: foto5,
+      id: "5",
+      tag: "Estrelas"
+    },
+    {
+      titulo: "Nome da Foto",
+      creditos: "Alura Space",
+      imagem: foto6,
+      id: "6",
+      tag: "Nebulosas"
+    },
+    {
+      titulo: "Nome da Foto",
+      creditos: "Alura Space",
+      imagem: foto7,
+      id: "7",
+      tag: "Galáxias"
+    },
+    {
+      titulo: "Nome da Foto",
+      creditos: "Alura Space",
+      imagem: foto8,
+      id: "8",
+      tag: "Nebulosas"
+    },
+    {
+      titulo: "Nome da Foto",
+      creditos: "Alura Space",
+      imagem: foto9,
+      id: "9",
+      tag: "Estrelas"
+    },
+    {
+      titulo: "Nome da Foto",
+      creditos: "Alura Space",
+      imagem: foto10,
+      id: "10",
+      tag: "Estrelas"
+    }
+  ]
 
-for(let i = 0; i < foto.length; i++){
-    fotos.push({
-        id: `foto-${i + 1}`,
-        url: foto[i], 
-        alt: 'foto de...', 
-        nome: `Foto ${i + 1}`, 
-        fonte: 'Fonte/fotográfo/Satélite'});
-}
-
-export {
+  export{
     fotos,
-}
+  }
