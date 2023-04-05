@@ -20,8 +20,6 @@ import Picture from 'components/Picture';
 
 import {fotos} from 'data/fotos.js';
 
-console.log(fotos[0].imagem);
-
 function Home() {
   const [menuSelected, setMenuSelected] = useState('Início');
   const [tagSelected, setTagSelected] = useState('');
@@ -54,9 +52,6 @@ function Home() {
       return foto;
     }
   }): [...fotos];
-  
-
-  console.log(fotosFiltradas)
 
   const tags = ['Estrelas', 'Galáxias', 'Lua', 'Planetas'];
   const socialMedia = [
