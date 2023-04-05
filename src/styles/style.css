@@ -147,8 +147,8 @@ body, header, h1, h2, h3, h4, p, span, div, ul, li, input, button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  -moz-column-gap: 16vw;
-       column-gap: 16vw;
+  -moz-column-gap: 10vw;
+       column-gap: 10vw;
 }
 .galery__subtitle h3 {
   font-size: 1.5rem;
@@ -162,7 +162,7 @@ body, header, h1, h2, h3, h4, p, span, div, ul, li, input, button {
   flex-grow: 1;
 }
 .galery__subtitle .tags .button {
-  width: 4.2em;
+  width: 8rem;
   background-color: #455872;
 }
 .galery__subtitle .tags .tag-selected {
@@ -173,6 +173,8 @@ body, header, h1, h2, h3, h4, p, span, div, ul, li, input, button {
   display: flex;
   flex-wrap: wrap;
   row-gap: 2vh;
+  -moz-column-gap: 1vh;
+       column-gap: 1vh;
   justify-content: space-between;
 }
 

@@ -53,7 +53,8 @@ function Home() {
     }
   }): [...fotos];
 
-  const tags = ['Estrelas', 'Galáxias', 'Lua', 'Planetas'];
+  const tags = [...new Set(fotos.map(foto => foto.tag))];
+
   const socialMedia = [
     { icon: Facebook(), alt: 'logomarca da rede social facebook' },
     { icon: Twitter(), alt: 'logomarca da rede social twitter' },
