@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import Header from '../../components/Header'
-import Banner from '../../components/Banner';
-import Menu from '../../components/Menu';
-import Galery from '../../components/Galery';
-import Footer from '../../components/Footer';
+import Header from 'components/Header'
+import Banner from 'components/Banner';
+import Menu from 'components/Menu';
+import Galery from 'components/Galery';
+import Footer from 'components/Footer';
 
-import logo from '../../files/logo.png';
+import logo from 'files/logo.png';
 
 import { MdFacebook as Facebook } from 'react-icons/md';
 import { BsTwitter as Twitter } from 'react-icons/bs';
@@ -16,9 +16,9 @@ import { AiOutlineEye as MaisVistas } from 'react-icons/ai';
 import { BiLike as MaisCurtidas } from 'react-icons/bi';
 import { TfiShine as Novas } from 'react-icons/tfi';
 import { MdLightbulbOutline as Surpreenda } from 'react-icons/md';
-import Picture from '../../components/Picture';
+import Picture from 'components/Picture';
 
-import {fotos} from '../../data/fotos.js';
+import {fotos} from 'data/fotos.js';
 
 console.log(fotos[0].imagem);
 
